@@ -1,0 +1,184 @@
+.navItems{
+    margin-right: 20px;
+}
+.navbarColour{
+    background-color:#00303F;
+}
+
+.inputForm{
+    width: 100%;
+    height: 50px;
+    animation: fadeIn 1s;
+}
+
+#errorMessage{
+    height: 200px;
+    width: 400px;
+}
+
+#emailHolder{
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#errorName{
+    width: 300px;
+    height: 30px;
+}
+
+#successPopup{
+    display: none;
+    margin-top: 3%;
+}
+
+#savedAlert{
+    display: none;
+}
+
+#dangerAlert{
+    display: none;
+}
+
+.scholDiv{
+    margin-top:20px;
+}
+
+.studImages{
+    margin-right: 10px;
+    margin-left: 10px;
+    animation: fadeIn 3s; 
+    
+}
+
+.nav-link{
+    color: white;
+}
+
+#deadlineWarning{
+    width: 200px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#logo{
+    animation: fadeIn 3s; 
+    width:100%;
+    
+}
+
+.landingText{
+    padding: 50px;
+    background-color: #00303F;
+    color:white;
+    animation: fadeIn 2s; 
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#welcome{
+    color: #00303F;
+    animation: fadeIn 5s;
+    
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.bkrImg{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    opacity: 0.5;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+
+}
+
+#dashOutline{
+    margin-top:7%;
+}
+
+#wrap {
+    overflow:hidden;
+    width:768px;
+    height: 432px;
+    padding:0;
+}
+    
+#iFrameID{
+    width:1920px;
+    height:1080px;
+    border:0px;
+    -webkit-ms-zoom: 0.4;
+    -webkit-moz-transform: scale(0.4);
+    -webkit-moz-transform-origin: 0 0;
+    -webkit-o-transform: scale(0.4);
+    -webkit-o-transform-origin: 0 0;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.form-label{
+    font-size: 20px;
+}
+
+#inputDiv{
+    background-color: #00303F;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding: 20px;
+}
+
+#inputImg{
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    position: fixed; 
+}
+
+#inputContents{
+    padding:20px;
+}
+
+.photoRow{
+    margin-bottom: 20px;
+}
+
+.headings{
+    color: white; 
+}
+
+.col-7{
+    height: 20%;
+}
+
+.card{
+    padding: 5px;
+    
+}
+.card-body{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.programName{
+    margin-top: 2%;
+}

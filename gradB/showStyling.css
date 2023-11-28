@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body {
+    background-color: white;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#preAndPostSlides {
+    display: none;
+}
+
+#studentSlides {
+    display: none;
+}
+
+#name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+.info {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.bullet {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wolf {
+    width: 145px;
+}
+
+.nameAndWolf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

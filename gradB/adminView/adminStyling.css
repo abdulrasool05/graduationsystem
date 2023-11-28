@@ -1,0 +1,216 @@
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+}
+
+.splitShowButton {
+    position: relative;
+    bottom: 10px;
+    left: 93%;
+}
+
+
+.page {
+    position: absolute;
+    left: 12vw;
+    top: 0;
+    width: 86vw;
+}
+.pageT {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: 1150px;
+}
+.pageL {
+    position: absolute;
+    left: 220px;
+    top: 0;
+    width: 500px;
+}
+.pageR {
+    position: absolute;
+    left: 900px;
+    top: 85px;
+    width: 460px;
+}
+.pageS {
+    position: absolute;
+    left: 1150px;
+    top: 250px;
+    width: 860px;
+}
+ .studentTable {
+    width: 100%;
+} 
+
+.searchBar {
+    position: relative;
+    top: 45px;
+    width: 22vw;
+}
+
+#wrap {
+    overflow:hidden;
+    width:768px;
+    height: 432px;
+    outline: 1px solid white;
+}
+
+   
+#iFrameID{
+    width:1920px;
+    height:1080px;
+    border:0px;
+    -webkit-ms-zoom: 0.4;
+    -webkit-moz-transform: scale(0.4);
+    -webkit-moz-transform-origin: 0 0;
+    -webkit-o-transform: scale(0.4);
+    -webkit-o-transform-origin: 0 0;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+    
+
+body {
+    background-color: rgba(0, 0, 0, .1)
+}
+
+.navbarbuttons:hover {
+    background-color: #343a40
+}
+
+.profileSidebar {
+    position: absolute;
+    bottom: 2%;
+}
+
+.form-switch{
+    position: left 200px;
+}
+
+.logTable{
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.Testin{
+    width: 250px;
+    display: inline;
+}
+.s-select{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #6c757d;
+    --bs-btn-border-color: #6c757d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5c636a;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #565e64;
+    --bs-btn-active-border-color: #51585e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d;
+}
+.lgText{
+    position: absolute;
+width: 500px;
+
+}
+
+.adminBoxTheme {
+    background-color: #343a40;
+    color: white;
+    width: 100%;
+    padding: 16px;
+}
+
+.adminBoxTheme1 {
+    background-color: #343a40;
+    color: white;
+}
+
+input::file-selector-button {
+    background-color: #343a40;
+    color: white;
+}
+
+h5 {
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.studentsSaved {
+    background-color: #343a40;
+    color: white;
+    width: 100%;
+    padding: 16px;
+}
+
+.progress {
+    width: 100%;
+}
+
+.msgsDiv {
+    background-color: #343a40;
+    width: 100%;
+    padding: 16px;
+}
+
+.msgsTable {
+    color: white;
+}
+
+.moddleAlign{
+    position: absolute;
+    right: 10px;
+}
+
+.showsTable {
+    background-color: #343a40;
+    width: 26%;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.createShowButtonTable {
+    background-color: #343a40;
+    width: 26%;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+#confirmDeleteMessage {
+    margin: 0px;
+}
+
+.preCacheTable {
+    background-color: #343a40;
+    width: 100%;
+    padding: 16px;
+}
+
+#savedEditSlideAlert {
+    display: none;
+}
+
+#emptySlideNameAlert {
+    display: none;
+}
+
+#slideNameAlert {
+    display: none;
+}
+
+#showAlert {
+    display: none;
+}
