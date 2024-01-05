@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `wcss_grad_gradB`
 --
-CREATE DATABASE IF NOT EXISTS `wcss_grad_gradB` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `wcss_grad_gradB`;
+CREATE DATABASE IF NOT EXISTS `gradB` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `gradB`;
 
 -- --------------------------------------------------------
 
@@ -33,7 +33,7 @@ CREATE TABLE `admins` (
   `admin_id` int NOT NULL,
   `admin_name` varchar(128) NOT NULL,
   `admin_email` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admins`
@@ -57,7 +57,7 @@ CREATE TABLE `awards` (
   `award_id` int NOT NULL,
   `award_name` varchar(256) NOT NULL,
   `award_is_always` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `awards`
@@ -80,7 +80,7 @@ CREATE TABLE `logs` (
   `log_message` varchar(1024) NOT NULL,
   `log_user_id` int NOT NULL,
   `log_type` enum('ADMIN','STUDENT') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `logs`
@@ -495,7 +495,7 @@ CREATE TABLE `messages` (
   `msg_email` varchar(128) NOT NULL,
   `msg_text` varchar(1024) NOT NULL,
   `msg_stud_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `messages`
@@ -514,7 +514,7 @@ CREATE TABLE `settings` (
   `setting_id` int NOT NULL,
   `setting_name` varchar(128) NOT NULL,
   `setting_value` varchar(1024) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `settings`
@@ -540,7 +540,7 @@ CREATE TABLE `shows` (
   `show_id` int NOT NULL,
   `show_long_name` varchar(128) NOT NULL,
   `show_short_name` varchar(64) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `shows`
@@ -571,7 +571,7 @@ CREATE TABLE `students` (
   `stud_enabled` int NOT NULL DEFAULT '1',
   `stud_css` varchar(1024) NOT NULL DEFAULT '',
   `stud_has_saved` int NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `students`
@@ -616,7 +616,7 @@ CREATE TABLE `surroundingSlides` (
   `surround_html` varchar(4096) NOT NULL,
   `surround_active` int NOT NULL DEFAULT '0',
   `surround_order` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `surroundingSlides`
