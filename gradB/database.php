@@ -1,9 +1,9 @@
 <?php
 
 $mysql_hostname = "localhost";
-$mysql_username = "wcss_grad_gradB";
-$mysql_password = "8cyJFV@C6r(7l1ba";
-$mysql_database = "wcss_grad_gradB";
+$mysql_username = "root";
+$mysql_password = "";
+$mysql_database = "gradb";
 $dsn = "mysql:host=".$mysql_hostname.";dbname=".$mysql_database;
 
 $debug = false;
