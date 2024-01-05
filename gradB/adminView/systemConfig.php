@@ -115,7 +115,7 @@ global $pdo;
             $query->execute();
           }
           }
-          echo('<meta http-equiv="refresh" content="0.1; URL=\'https://wcss.emmell.org/gradB/adminView/adminTemplate0.php?page=config"/> ');
+          echo('<meta http-equiv="refresh" content="0.1; URL=\'http://localhost/gradB/gradB/adminView/adminTemplate0.php?page=config"/> ');
           }
           
           if (isset($_POST['reset'])){
@@ -125,7 +125,7 @@ global $pdo;
             $query->execute();
             $query=$pdo->prepare("TRUNCATE logs");
             $query->execute();
-            echo('<meta http-equiv="refresh" content="0.1; URL=\'https://wcss.emmell.org/gradB/adminView/adminTemplate0.php?page=config"/> ');
+            echo('<meta http-equiv="refresh" content="0.1; URL=\'http://localhost/gradB/gradB/adminView/adminTemplate0.php?page=config"/> ');
           }
 
           if (isset($_POST['Studemail'])){
@@ -135,7 +135,7 @@ global $pdo;
             $query->bindparam(":stud_lname", $_POST['Studlname']);
             $query->bindparam(":stud_fname", $_POST['Studfname']);
             $query->execute();
-            echo('<meta http-equiv="refresh" content="0.1; URL=\'https://wcss.emmell.org/gradB/adminView/adminTemplate0.php?page=config"/> ');
+            echo('<meta http-equiv="refresh" content="0.1; URL=\'http://localhost/gradB/gradB/adminView/adminTemplate0.php?page=config"/> ');
           }
 
 
@@ -144,7 +144,7 @@ global $pdo;
             $query->bindparam(":admin_name", $_POST['AdminName']);
             $query->bindparam(":admin_email", $_POST['AdminEmail']);
             $query->execute();
-            echo('<meta http-equiv="refresh" content="0.1; URL=\'https://wcss.emmell.org/gradB/adminView/adminTemplate0.php?page=config"/> ');
+            echo('<meta http-equiv="refresh" content="0.1; URL=\'http://localhost/gradB/gradB/adminView/adminTemplate0.php?page=config"/> ');
           }
 
           
@@ -158,7 +158,7 @@ global $pdo;
             $query->bindparam(":award_name", $_POST['AwardName']);
             $query->bindparam(":award_is_always", $AwardAlways);
             $query->execute();
-            echo('<meta http-equiv="refresh" content="0.1; URL=\'https://wcss.emmell.org/gradB/adminView/adminTemplate0.php?page=config"/> ');
+            echo('<meta http-equiv="refresh" content="0.1; URL=\'http://localhost/gradB/gradB/adminView/adminTemplate0.php?page=config"/> ');
           }
 
           if (isset($_POST['RemoveAdmin'])){
@@ -166,7 +166,7 @@ global $pdo;
             $query=$pdo->prepare("DELETE FROM admins WHERE admin_id = :adminName;");
             $query->bindparam(":adminName", $adminRem);
             $query->execute();
-            echo('<meta http-equiv="refresh" content="0.1; URL=\'https://wcss.emmell.org/gradB/adminView/adminTemplate0.php?page=config"/> ');
+            echo('<meta http-equiv="refresh" content="0.1; URL=\'http://localhost/gradB/gradB/adminView/adminTemplate0.php?page=config"/> ');
           }
 
           if (isset($_POST['RemoveAward'])){
@@ -174,7 +174,7 @@ global $pdo;
             $query=$pdo->prepare("DELETE FROM awards WHERE award_id = :awardId;");
             $query->bindparam(":awardId", $awardRem);
             $query->execute();
-            echo('<meta http-equiv="refresh" content="0.1; URL=\'https://wcss.emmell.org/gradB/adminView/adminTemplate0.php?page=config"/> ');
+            echo('<meta http-equiv="refresh" content="0.1; URL=\'http://localhost/gradB/gradB/adminView/adminTemplate0.php?page=config"/> ');
           }
           
     ?>
