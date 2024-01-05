@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/google-auth/api.php';
+
 require("database.php");
 
 function LogCheck(){
@@ -17,13 +17,8 @@ function LogCheck(){
     $query->execute();
     $settings=$query->fetchALL(PDO::FETCH_ASSOC);
    
-    if (!google_isLoggedIn()) {
-        google_sendToAuth($redir=$_SERVER['REQUEST_URI']);    
-        die();
-    }
-    
-    $email = google_getUserEmail();
-   // $email='testUser@ocdsb.ca';
+     
+   $email='araso2@ocdsb.ca';
    $x=0;
 
     foreach ($admins as $ad) {
@@ -57,7 +52,7 @@ function redirect(){
     if($stat=='null')
         echo "You are not in our database please contact someone";
         
-    else if($stat=='stud'&&$allow!=1){
+    else if($stat=='stud' && $allow!=1){
             echo "Sorry Students are not permitted to login at the time";
         }
     else if($stat=='stud'&& $date2<$date){
@@ -67,14 +62,14 @@ function redirect(){
         $studentInfo=getStud($email);
         $studId= $studentInfo[0]['stud_id'];
         adminLogs(1, 4, $studId, $email);
-        echo('<meta http-equiv="refresh" content="0.2;URL=\'https://wcss.emmell.org/gradB/studentView/studentTemplate.php" /> ');
+        echo('<meta http-equiv="refresh" content="0.2;URL=\'http://localhost/gradB/gradB/studentView/studentTemplate.php" /> ');
     } 
     else if ($stat=='admin') {
         $adminInfo=getCurrentAdmin($email);
         $adminId=$adminInfo[0]['admin_id'];
         adminLogs(2, 4, $adminId, $email);
 
-        echo('<meta http-equiv="refresh" content="0.2;URL=\'https://wcss.emmell.org/gradB/adminView/adminTemplate0.php" /> ');
+        echo('<meta http-equiv="refresh" content="0.2;URL=\'http://localhost/gradB/gradB/adminView/adminTemplate0.php" /> ');
     }
         
 }
@@ -96,7 +91,7 @@ function stud_Auth(){
 }
 
 function SLogTrack(){
-    $Stud_LogTrack=getStud(google_getUserEmail());
+    $Stud_LogTrack=getStud('araso2@ocdsb.ca');
     
 }
 //Delete this one and use one below
@@ -122,7 +117,7 @@ function getCurrentAdmin($adminEmail) {
 
 
 function getEmail(){
-    return(google_getUserEmail());
+    return 'araso2@ocdsb.ca';
 }
    
 function getStud($studEmail){
@@ -202,13 +197,16 @@ function getPhotoDir($studNum, $studentYear) {
 
     foreach ($fileList as $currentFile) {
         if ($currentFile != '.' && $currentFile != '..') {
-            // echo $currentFile;
-
+            
+            
             $fileNameSplit = explode('_', $currentFile);
+            //echo '<pre>';
+            //print_r($fileNameSplit);
+            //echo '</pre>';
             $fileStudentNum = substr($fileNameSplit[0], "0");
 
 
-            $fileYear = substr($fileNameSplit[1], "0");
+            $fileYear = substr($fileNameSplit['1'], "0");
             $fileYear = pathinfo($fileYear, PATHINFO_FILENAME);
 
 
